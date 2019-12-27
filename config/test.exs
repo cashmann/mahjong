@@ -11,8 +11,10 @@ config :logger, level: :warn
 
 # Configure your database
 config :mahjong, Mahjong.Repo,
-  username: "postgres",
+  username: "nathan",
   password: "postgres",
   database: "mahjong_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+config :bcrypt_elixir, :log_rounds, 4
